@@ -10,11 +10,13 @@ public class C03_PositiveLoginTest {
     @Test
     public void test01(){
 
+
+
         // verify that you con login http://automationexercise.com
         AutomationExercisePage autoPage = new AutomationExercisePage();
 
         // go to the http://automationexercise.com
-        Driver.getDriver().get("http://automationexercise.com");
+        Driver.getDriver().get("http://automationexercise/.com");
 
         // click on signUp button
         autoPage.signUpLoginButtonElement.click();

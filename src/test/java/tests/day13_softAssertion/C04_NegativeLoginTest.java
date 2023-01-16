@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutomationExercisePage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C04_NegativeLoginTest {
 
@@ -17,9 +18,9 @@ public class C04_NegativeLoginTest {
         autoPage.loginEmailTextBox.sendKeys("qwerrewr@gmail.com");
         autoPage.loginPasswordTextBox.sendKeys("asdfqwer1.");
         autoPage.loginloginButton.click();
-        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
 
-        Driver.close();
+        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
+        //Driver.close();
 
     }
 
@@ -31,9 +32,9 @@ public class C04_NegativeLoginTest {
         autoPage.loginEmailTextBox.sendKeys("asdf11dddd@gmail.com");
         autoPage.loginPasswordTextBox.sendKeys("asdfqwer1.sdfsdf");
         autoPage.loginloginButton.click();
-        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
 
-        Driver.close();
+        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
+        //Driver.close();
 
     }
 
@@ -45,8 +46,8 @@ public class C04_NegativeLoginTest {
         autoPage.loginEmailTextBox.sendKeys("asdf1asdfasdf1dddd@gmail.com");
         autoPage.loginPasswordTextBox.sendKeys("asdfqwer1.sdfsdf");
         autoPage.loginloginButton.click();
-        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
 
+        Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
         Driver.close();
 
     }
