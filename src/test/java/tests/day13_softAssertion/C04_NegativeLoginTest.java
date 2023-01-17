@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutomationExercisePage;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class C04_NegativeLoginTest {
 
@@ -48,7 +47,7 @@ public class C04_NegativeLoginTest {
         autoPage.loginloginButton.click();
 
         Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
-        Driver.close();
+        Driver.closeDriver();
 
     }
 

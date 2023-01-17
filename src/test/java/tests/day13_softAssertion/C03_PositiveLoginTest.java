@@ -33,7 +33,7 @@ public class C03_PositiveLoginTest {
         // verify that you are logged
         Assert.assertTrue(autoPage.loggedTextInfo.isDisplayed());
 
-        Driver.close();
+        Driver.closeDriver();
 
     }
 }

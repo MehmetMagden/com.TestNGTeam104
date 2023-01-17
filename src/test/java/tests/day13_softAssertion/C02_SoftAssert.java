@@ -2,7 +2,6 @@ package tests.day13_softAssertion;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.devtools.v85.network.model.DataReceived;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -129,7 +128,7 @@ public class C02_SoftAssert {
 
         softAssert.assertAll();
 
-        Driver.close();
+        Driver.closeDriver();
 
     }
 }

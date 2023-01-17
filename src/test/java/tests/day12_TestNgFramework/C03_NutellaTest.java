@@ -1,8 +1,6 @@
 package tests.day12_TestNgFramework;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
@@ -35,7 +33,7 @@ public class C03_NutellaTest {
 
         Assert.assertTrue(actualText.contains(expectedWord));
 
-        Driver.close();
+        Driver.closeDriver();
 
     }
 }

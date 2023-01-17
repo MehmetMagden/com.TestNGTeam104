@@ -18,9 +18,10 @@ public class Driver {
 
         if (driver == null) {
 
-            switch ("browser") {
+            switch (browser) {
 
                 case "chrome":
+                    System.out.println("CRHOOOOM");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
@@ -48,7 +49,7 @@ public class Driver {
 
     }
 
-    public static void close() {
+    public static void closeDriver() {
 
         if (driver != null) {
             driver.close();

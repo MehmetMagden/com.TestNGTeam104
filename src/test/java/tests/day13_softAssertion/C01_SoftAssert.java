@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AmazonPage;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class C01_SoftAssert {
 
@@ -63,7 +62,7 @@ public class C01_SoftAssert {
         //ReusableMethods.wait(10);
 
         softAssert.assertAll();
-        Driver.close();
+        Driver.closeDriver();
 
     }
 

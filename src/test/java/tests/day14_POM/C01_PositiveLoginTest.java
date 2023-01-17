@@ -22,7 +22,7 @@ public class C01_PositiveLoginTest {
 
         Assert.assertTrue(qdPage.loginMyCoursesButton.isDisplayed());
 
-        Driver.close();
+        Driver.closeDriver();
 
 
 
