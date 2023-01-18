@@ -7,11 +7,12 @@ import utilities.Driver;
 
 public class C04_NegativeLoginTest {
 
-    AutomationExercisePage autoPage = new AutomationExercisePage();
+    AutomationExercisePage autoPage ;
 
-    @Test
+    @Test(groups = "reg2")
     public void test01(){
 
+        autoPage = new AutomationExercisePage();
         Driver.getDriver().get("http://automationexercise.com");
         autoPage.signUpLoginButtonElement.click();
         autoPage.loginEmailTextBox.sendKeys("qwerrewr@gmail.com");
@@ -19,12 +20,15 @@ public class C04_NegativeLoginTest {
         autoPage.loginloginButton.click();
 
         Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
-        //Driver.close();
+        //Driver.getDriver().close();
+        Driver.closeDriver();
+
 
     }
 
     @Test
     public void test02(){
+        autoPage = new AutomationExercisePage();
 
         Driver.getDriver().get("http://automationexercise.com");
         autoPage.signUpLoginButtonElement.click();
@@ -33,12 +37,13 @@ public class C04_NegativeLoginTest {
         autoPage.loginloginButton.click();
 
         Assert.assertTrue(autoPage.invalidLoginInfoText.isDisplayed());
-        //Driver.close();
+        Driver.closeDriver();
 
     }
 
     @Test
     public void test03(){
+        autoPage = new AutomationExercisePage();
 
         Driver.getDriver().get("http://automationexercise.com");
         autoPage.signUpLoginButtonElement.click();

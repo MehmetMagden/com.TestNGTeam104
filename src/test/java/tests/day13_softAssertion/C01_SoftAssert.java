@@ -24,7 +24,7 @@ public class C01_SoftAssert {
         // verify that you are in the amazon webpage
         SoftAssert softAssert = new SoftAssert();
 
-        String expecterURLWord = "Ramazon";
+        String expecterURLWord = "amazon";
         String actualURL = Driver.getDriver().getCurrentUrl();
 
         softAssert.assertTrue(actualURL.contains(expecterURLWord), "Url test Failed");
@@ -37,7 +37,7 @@ public class C01_SoftAssert {
         amazonPage.amazonSearchBox.sendKeys("Nutella" + Keys.ENTER);
 
         // Verify that result text has Nutella Keyword
-        String expectedResultWord = "Kutella";
+        String expectedResultWord = "Nutella";
         String actualResultText = amazonPage.amazonResultElement.getText();
 
         softAssert.assertTrue(actualResultText.contains(expectedResultWord), "Nutella Test Failed");

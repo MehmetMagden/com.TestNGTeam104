@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!-- When we plan to select a method from a class, we use include
+    and if we do not execute a method from a class, we use exclude
+-->
+
+<suite name="Running Test Methods">
+    <test name="Running desired test methods">
+
+        <classes>
+            <class name="tests.day13_softAssertion.C04_NegativeLoginTest">
+                <!-- we set the class we want to work with, we will do something with methods in this class -->
+                <methods>
+                    <include name="test01"></include>
+
+                </methods>
+
+            </class>
+            <!-- if we want to add another class we should be careful about the order -->
+            <class name="tests.day14_POM.C02_NegativeLoginTest">
+                <methods>
+                    <exclude name="wrongEmailTest"></exclude>
+                    
+                </methods>
+                
+            </class>
+        </classes>
+
+    </test>
+
+
+</suite>

@@ -7,7 +7,7 @@ public class C05_SoftAssert {
 
 
 
-    @Test
+    @Test(groups = {"reg1","smoke"})
     public void test01(){
 
         // to use softAssert we need to create an object from the class

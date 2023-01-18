@@ -21,13 +21,13 @@ public class Driver {
             switch (browser) {
 
                 case "chrome":
-                    System.out.println("CRHOOOOM");
+
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
 
                 case "edge":
-                    System.out.println("proBLEMMMMMM");
+
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;

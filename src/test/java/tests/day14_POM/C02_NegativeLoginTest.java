@@ -14,12 +14,12 @@ public class C02_NegativeLoginTest {
     //V email , W password
     // w email, w password
 
-    QdPage qdPage= new QdPage(); ;
+    QdPage qdPage;
 
     @Test
     public void wrongEmailTest(){
 
-
+        qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));
         qdPage.homePageloginButton.click();
         qdPage.loginUserEmailTextBox.sendKeys(ConfigReader.getProperty("qdInvalidUserImail"));
@@ -32,7 +32,7 @@ public class C02_NegativeLoginTest {
 
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void wrongPasswordTest(){
 
         qdPage = new QdPage();
@@ -48,7 +48,7 @@ public class C02_NegativeLoginTest {
 
     }
 
-    @Test
+    @Test(groups = {"reg1","reg2"})
     public void wrongPasswordAndEmailTest(){
 
         qdPage = new QdPage();

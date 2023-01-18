@@ -51,8 +51,8 @@ public class C02_SoftAssert {
         softAssert.assertTrue(autoPage.newUserSignUpText.isDisplayed());
 
         //6. Enter name and email address
-        autoPage.newUserSignUpNameTextBox.sendKeys("hasanaaa");
-        autoPage.newUserEmailTextBox.sendKeys("asdf11dddd@gmail.com");
+        autoPage.newUserSignUpNameTextBox.sendKeys("hasanaaaaa");
+        autoPage.newUserEmailTextBox.sendKeys("asdf11ddddaa@gmail.com");
 
         //7. Click 'Signup' button
         autoPage.newUserSignUpButton.click();

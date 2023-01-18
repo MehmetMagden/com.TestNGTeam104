@@ -9,7 +9,7 @@ import utilities.Driver;
 public class C03_NutellaTest {
 
 
-    @Test
+    @Test(groups = {"reg1","reg2","smoke"})
     public void test01() {
 
 

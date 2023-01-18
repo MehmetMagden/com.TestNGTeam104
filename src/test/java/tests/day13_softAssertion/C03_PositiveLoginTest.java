@@ -16,7 +16,7 @@ public class C03_PositiveLoginTest {
         AutomationExercisePage autoPage = new AutomationExercisePage();
 
         // go to the http://automationexercise.com
-        Driver.getDriver().get("http://automationexercise/.com");
+        Driver.getDriver().get("http://automationexercise/com");
 
         // click on signUp button
         autoPage.signUpLoginButtonElement.click();
