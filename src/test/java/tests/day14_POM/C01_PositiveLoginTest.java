@@ -5,11 +5,13 @@ import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C01_PositiveLoginTest {
 
     @Test
     public void test01(){
+        ReusableMethods.wait(4);
         QdPage qdPage = new QdPage();
 
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));

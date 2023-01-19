@@ -1,15 +1,25 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Running Classes">
+<suite name="Running Classes" parallel="tests" thread-count="2">
     <test name=" Running desired test classes">
 
         <classes>
             <class name="tests.day12_TestNgFramework.C03_NutellaTest"></class>
             <class name="tests.day14_POM.C02_NegativeLoginTest"></class>
-            <class name="tests.day12_TestNgFramework.C01_TestNG_FirstTest"></class>
+
 
         </classes>
 
     </test>
 
+    <test name="Second Test Block">
+
+        <classes>
+
+            <class name="tests.day14_POM.C01_PositiveLoginTest"></class>
+            <class name="tests.day13_softAssertion.C01_SoftAssert"></class>
+
+        </classes>
+
+    </test>
 </suite>

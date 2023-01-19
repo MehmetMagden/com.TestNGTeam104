@@ -2,12 +2,15 @@ package tests.day12_TestNgFramework;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.ReusableMethods;
 
 public class C02_DependsOnMethods {
 
 
     @Test(priority = 9)
     public void test01(){
+
+        ReusableMethods.wait(5);
         System.out.println("first test");
        // Assert.assertTrue(4>8);
     }

@@ -5,12 +5,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_NutellaTest {
 
 
     @Test(groups = {"reg1","reg2","smoke"})
     public void test01() {
+
+        ReusableMethods.wait(2);
 
 
         // go to the amazon webpage

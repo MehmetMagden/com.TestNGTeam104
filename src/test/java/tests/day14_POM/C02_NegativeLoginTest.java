@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_NegativeLoginTest {
 
@@ -18,6 +19,8 @@ public class C02_NegativeLoginTest {
 
     @Test
     public void wrongEmailTest(){
+
+        ReusableMethods.wait(3);
 
         qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));

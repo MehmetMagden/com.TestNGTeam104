@@ -12,6 +12,10 @@ public class Driver {
 
     static WebDriver driver;
 
+    private  Driver(){
+
+    }
+
     public static WebDriver getDriver() {
 
         String browser = ConfigReader.getProperty("browser");
@@ -36,6 +40,10 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     driver= new FirefoxDriver();
                     break;
+
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
 
 
 
