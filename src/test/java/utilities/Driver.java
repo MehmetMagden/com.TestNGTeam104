@@ -13,6 +13,9 @@ public class Driver {
     static WebDriver driver;
 
     private  Driver(){
+        // Singleton Pattern : to prevent creating new object from this class, we can use singleton patter.
+        // creating a private constructer is more than enough
+        // it is for security
 
     }
 

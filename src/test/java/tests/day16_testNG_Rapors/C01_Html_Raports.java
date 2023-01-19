@@ -35,7 +35,7 @@ public class C01_Html_Raports extends TestBaseRapor {
         extentTest.info("System saved the results");
 
         Assert.assertTrue(actualResultText.contains(expectedWord));
-        extentTest.pass("tested if results has Nutella");
+        extentTest.pass("tested that results have Nutella");
 
     }
 
